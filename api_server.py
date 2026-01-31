@@ -136,6 +136,26 @@ def gemini_generate(prompt: str) -> str:
         return f"⚠️ Gemini yanıtı alınamadı: {e}"
 
 
+# -----------------------------------------------------------------------------
+# FastAPI app + CORS (Render/Vercel)
+# ÖNEMLİ: CORSMiddleware app tanımından HEMEN sonra olmalı.
+# -----------------------------------------------------------------------------
+app = FastAPI(title="Portfolio AI Chatbot API")
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origin_regex=r"https://.*\.vercel\.app",
+    allow_origins=[
+        "https://portfoli-chatbot.vercel.app",
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+    ],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
+
+
 class ChatMessage(BaseModel):
     role: Literal["user", "assistant"]
     content: str
@@ -145,21 +165,6 @@ class ChatRequest(BaseModel):
     message: str = Field(min_length=1)
     history: list[ChatMessage] = Field(default_factory=list)
     lang: Literal["tr", "en"] = "tr"
-
-
-app = FastAPI(title="Portfolio AI Chatbot API")
-
-app.add_middleware(
-    CORSMiddleware,
-    # Vercel preview domain'leri her deploy'da değişebildiği için
-    # en stabil yaklaşım: origin'i yansıt (credentials açıkken Starlette bunu güvenli şekilde yapar).
-    allow_origins=["*"],
-    allow_credentials=True,
-    allow_methods=["*"],
-    allow_headers=["*"],
-    expose_headers=["*"],
-    max_age=86400,
-)
 
 # Statik dosyalar: URL'ler Streamlit ile aynı kalsın
 assets_dir = ROOT / "assets"
