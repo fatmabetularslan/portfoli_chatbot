@@ -151,12 +151,9 @@ app = FastAPI(title="Portfolio AI Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origin_regex=r"https://.*\.vercel\.app",
-    allow_origins=[
-        "https://portfoli-chatbot.vercel.app",
-        "http://localhost:5173",
-        "http://127.0.0.1:5173",
-    ],
+    # Vercel preview domain'leri her deploy'da değişebildiği için
+    # en stabil yaklaşım: origin'i yansıt (credentials açıkken Starlette bunu güvenli şekilde yapar).
+    allow_origins=["*"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
