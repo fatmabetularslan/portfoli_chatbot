@@ -1,0 +1,389 @@
+{
+  "name": "Fatma Betül Arslan",
+  "title": "Veri Bilimci",
+  "location": "İstanbul, Türkiye",
+  "email": "betularsln01@gmail.com",
+  "phone": "+90 546 911 1024",
+  "links": {
+    "linkedin": "https://linkedin.com/in/fatma-betül-arslan",
+    "github": "https://github.com/fatmabetularslan",
+    "medium": "https://medium.com/@betularsln01"
+  },
+  "profile": "Kullanıcı odaklı çözümler geliştirmeyi seven, öğrenmeye istekli ve ekip çalışmasını önemseyen bir veri bilimcisiyim. Matematik altyapımı kullanarak son iki yıldır müşteri kaybı tahmini, öneri sistemleri ve kullanıcı segmentasyonu gibi farklı alanlarda veri bilimi projeleri geliştiriyorum. Veriyi, ürün büyümesine katkı sağlayan anlamlı içgörülere dönüştürmekten keyif alıyorum.",
+  "education": [
+    {
+      "institution": "Ankara Yıldırım Beyazıt Üniversitesi",
+      "degree": "Lisans – Matematik",
+      "years": "Eyl 2018 – Tem 2024"
+    }
+  ],
+  "experience": [
+    {
+      "title": "SAP ABAP & Fiori Danışmanı",
+      "company": "UISAP Software Solutions",
+      "duration": "Nis 2025 – Haz 2025",
+      "description": "ABAP ile geliştirme yaptım ve SAPUI5 tabanlı Fiori uygulamaları geliştirdim. OData servisleri tasarladım, SAP S/4HANA sistemlerinde raporlama ve entegrasyon süreçlerini iyileştirdim."
+    },
+    {
+      "title": "Veri Bilimi Stajyeri",
+      "company": "Ordulu Technology",
+      "duration": "Eki 2023 – May 2024",
+      "description": "Apache Airflow ile veri iş akışlarını otomatikleştirdim. Ürün sınıflandırma doğruluğunu artıran modeller geliştirdim. Makine öğrenmesi çözümlerinin mevcut sistemlere entegrasyonu için ekiple birlikte çalıştım."
+    },
+    {
+      "title": "Veritabanı Yöneticisi Stajyeri",
+      "company": "DMC Bilgi Teknolojileri",
+      "duration": "Tem 2023 – Eyl 2023",
+      "description": "SQL tabanlı çözümler geliştirdim. Python kullanarak raporlamayı otomatikleştirdim. Veritabanı sorgu performansını ve yapısını iyileştirme çalışmalarına destek oldum."
+    }
+  ],
+  "skills": {
+    "Programlama ve Veri Analizi": [
+      "Python",
+      "Pandas",
+      "Numpy",
+      "SQL",
+      "Javascript",
+      "Jupyter",
+      "Git"
+    ],
+    "Makine Öğrenmesi ve Veri Bilimi": [
+      "Scikit-learn",
+      "TensorFlow",
+      "Feature Engineering",
+      "Doğal Dil İşleme (NLP)",
+      "Regresyon Modelleri",
+      "Zaman Serisi Analizi",
+      "A/B Testi"
+    ],
+    "Veri Mühendisliği ve Otomasyon": [
+      "Apache Airflow",
+      "Docker",
+      "Linux",
+      "REST API entegrasyonu"
+    ],
+    "Veri Görselleştirme": [
+      "Matplotlib",
+      "Seaborn",
+      "Power BI",
+      "Plotly"
+    ]
+  },
+  "projects": [
+    {
+      "name": "AI-Powered Portfolio Chatbot",
+      "technology": "Python · Streamlit · Google Gemini 1.5 API · RAG · ReportLab",
+      "description": {
+        "tr": "RAG (Retrieval Augmented Generation) teknolojisi kullanarak CV verilerimi akıllıca sorgulayan, kullanıcı sorularına anında yanıt veren ve iş başvuruları için role özel cover letter ile detaylı uyumluluk raporları üreten AI destekli chatbot. Çok dilli destek (TR/EN) ve PDF export özelliği ile profesyonel iş başvuru süreçlerini otomatikleştiriyor.",
+        "en": "AI-powered chatbot leveraging RAG (Retrieval Augmented Generation) technology to intelligently query CV data, provide instant responses to user questions, and generate role-specific cover letters with detailed job-fit reports for applications. Automates professional job application processes with multilingual support (TR/EN) and PDF export capabilities."
+      },
+      "features": {
+        "tr": [
+          "TR/EN dil desteği",
+          "PDF export özelliği",
+          "Karanlık/Açık tema",
+          "Glassmorphism UI",
+          "Component-based mimari"
+        ],
+        "en": [
+          "TR/EN language support",
+          "PDF export feature",
+          "Dark/Light theme",
+          "Glassmorphism UI",
+          "Component-based architecture"
+        ]
+      },
+      "github": "https://github.com/fatmabetularslan/Portfolio_AI_Chatbot"
+    },
+    {
+      "name": "FinTurk Finansal Asistan",
+      "technology": "Streamlit · Gemini AI · XGBoost · yfinance · Plotly · SQLite · RAG",
+      "description": {
+        "tr": "BIST hisseleri için sohbet tabanlı analiz, fiyat tahmini ve portföy yönetimi sunan yapay zekâ destekli finans asistanı.",
+        "en": "AI-powered assistant that delivers chat-based BIST stock insights, price forecasts, and portfolio management in one Streamlit app."
+      },
+      "features": {
+        "tr": [
+          "Gemini destekli Türkçe finans chatbot ve eğitim modu",
+          "XGBoost ile fiyat tahmini, teknik analiz ve haber sentiment entegrasyonu",
+          "Portföy simülasyonu, risk metriği hesaplama ve akıllı alarm sistemi",
+          "Finansal takvim, popüler hisse kısayolları ve modüler Streamlit arayüzü"
+        ],
+        "en": [
+          "Gemini-powered finance chatbot with Turkish NLP and education tips",
+          "XGBoost price forecasting, technical indicators and news sentiment fusion",
+          "Portfolio simulation, risk metrics and smart alert management",
+          "Financial calendar, quick-access tickers and modular Streamlit UI"
+        ]
+      }, 
+      "github" : "https://github.com/fatmabetularslan/FinTurk"
+    },
+    {
+      "name": "Mobile App User Behavior Analysis & Segmentation",
+      "technology": "Python, K-Means, Plotly",
+      "description": {
+        "tr": "Ekran süresi, harcama ve değerlendirme skorlarına göre kullanıcıları segmentlere ayırdım. Retention stratejilerini desteklemek için kalıpları görselleştirdim.",
+        "en": "Segmented users by screen time, spending, and ratings. Visualized patterns to support retention strategies."
+      },
+      "features": {
+        "tr": [
+          "Kullanıcı segmentasyonu",
+          "K-Means kümeleme",
+          "Veri görselleştirme",
+          "Retention stratejileri"
+        ],
+        "en": [
+          "User segmentation",
+          "K-Means clustering",
+          "Data visualization",
+          "Retention strategies"
+        ]
+      },
+      "github": "https://github.com/fatmabetularslan/Mobile-App-User-Behavior-Analysis_Segmentation"
+    },
+    {
+      "name": "Customer Churn Prediction",
+      "technology": "PySpark, SMOTE, Random Forest, XGBoost",
+      "description": {
+        "tr": "Dengesiz müşteri verisi üzerinde ensemble modeller ve örnekleme teknikleri kullanarak müşteri kaybını tahmin ettim.",
+        "en": "Predicted churn on imbalanced data using ensemble models and sampling techniques."
+      },
+      "features": {
+        "tr": [
+          "Ensemble model yaklaşımı",
+          "SMOTE ile veri dengesizliği çözümü",
+          "Özellik mühendisliği",
+          "Model performans analizi"
+        ],
+        "en": [
+          "Ensemble model approach",
+          "SMOTE for data imbalance",
+          "Feature engineering",
+          "Model performance analysis"
+        ]
+      },
+      "github": "https://github.com/fatmabetularslan/Capstone-tt-akadem-"
+    },
+    {
+      "name": "Movie Recommendation System",
+      "technology": "DuckDB, Collaborative Filtering, Content-Based Filtering",
+      "description": {
+        "tr": "150 milyonun üzerinde kaydı verimli şekilde işleyerek kişiselleştirilmiş film önerileri ürettim.",
+        "en": "Processed 150M+ records efficiently for personalized recommendations."
+      },
+      "features": [
+        "150M+ kayıt işleme",
+        "Hibrit öneri sistemi",
+        "Yüksek performans optimizasyonu",
+        "Gerçek zamanlı öneriler"
+      ],
+      "github": "https://github.com/fatmabetularslan/tt-bootcamp/commit/8114130cd34af5d272c55d06aa8d0a69ab4e2152"
+    },
+    {
+      "name": "Natural Language to SQL Query Tool",
+      "technology": "LangChain · OpenAI API · SQLite · Python",
+      "description": {
+        "tr": "Kullanıcıların İngilizce doğal dilde yazdığı sorguları SQL'e çevirerek bir SQLite veritabanı üzerinde çalıştıran bir araç geliştirdim.",
+        "en": "This project enables users to query a SQLite database using natural language (in English). Through LangChain, user prompts are translated into SQL queries, which are executed on the underlying database."
+      },
+      "features": [
+        "Doğal dil işleme",
+        "SQL sorgu üretimi",
+        "Tablo yapısı çıkarımı",
+        "Kullanıcı dostu arayüz"
+      ],
+      "github": "https://github.com/fatmabetularslan/sql"
+    },
+    {
+      "name": "Smart Home Energy Management Application",
+      "technology": "REST API, Docker, Pytest",
+      "description": {
+        "tr": "Akıllı ev enerji tüketimini tahmin eden ölçeklenebilir bir API geliştirdim ve iş akışlarını dokümante ettim.",
+        "en": "Built scalable energy prediction API and documented workflows."
+      },
+      "features": [
+        "RESTful API",
+        "Docker ile konteynerleştirme",
+        "Test otomasyonu",
+        "Ölçeklenebilir mimari"
+      ],
+      "github": "https://github.com/fatmabetularslan/Enerji-Tuketimi-Tahmin-Uygulamasi"
+    },
+    {
+      "name": "Credit Score Prediction",
+      "technology": "Python, pandas, scikit-learn, TensorFlow, Tkinter",
+      "description": {
+        "tr": "Kredi skoru tahmini için sinir ağı modeli geliştirdim; Tkinter ile GUI arayüzü ve özellik analizi ekranı tasarladım.",
+        "en": "Neural network for credit scoring with GUI and feature analysis."
+      },
+      "features": [
+        "Yapay sinir ağı modeli",
+        "Masaüstü GUI arayüzü",
+        "Özellik analizi",
+        "Kredi skorlama"
+      ],
+      "github": "https://github.com/fatmabetularslan/kredi_risk_analizi"
+    },
+    {
+      "name": "Energy Consumption Prediction API",
+      "technology": "Python · FastAPI · XGBoost · Scikit-learn · Docker",
+      "description": {
+        "tr": "Akıllı ev cihazlarının enerji tüketimini 24 saatlik periyotlar için tahmin eden RESTful API servisi. Çevresel faktörleri analiz ederek XGBoost makine öğrenmesi modeli ile yüksek doğrulukta tahminler üretiyor. FastAPI ve Docker kullanılarak geliştirilmiş, ölçeklenebilir ve production-ready bir backend çözümü.",
+        "en": "RESTful API service that predicts smart home appliance energy consumption over 24-hour periods. Analyzes environmental factors to generate high-accuracy predictions using an XGBoost machine learning model. Built with FastAPI and Docker, offering a scalable and production-ready backend solution for energy optimization."
+      },
+      "features": [
+        "FastAPI backend",
+        "XGBoost modeli",
+        "Docker konteynerleştirme",
+        "Ölçeklenebilir mimari"
+      ],
+      "github": "https://github.com/fatmabetularslan/Enerji-Tuketimi-Tahmin-Uygulamasi"
+    },
+    {
+      "name": "AdventureWorks Sales Dashboard",
+      "technology": "Power BI",
+      "description": {
+        "tr": "Satış performansını analiz etmek ve optimizasyon fırsatlarını görmek için interaktif bir Power BI dashboard'ı hazırladım.",
+        "en": "Interactive dashboard for sales optimization and insights."
+      },
+      "features": [
+        "Etkileşimli dashboard",
+        "Satış analitiği",
+        "Veri görselleştirme",
+        "İş içgörüleri"
+      ],
+      "github": "https://github.com/fatmabetularslan/AdventureWorks-DB-SQL-and-PowerBi"
+    },
+    {
+      "name": "Real-Time Face Recognition App",
+      "technology": "Streamlit · OpenCV · Face Recognition · dlib · Python",
+      "description": {
+        "tr": "Kullanıcının yüklediği kimlik fotoğraflarına göre gerçek zamanlı yüz tanıma yapan bir Streamlit uygulaması geliştirdim. Tanınan yüzleri yeşil kutu ve etiketle, tanınmayanları kırmızı kutu ve 'Unknown' etiketiyle gösteriyor.",
+        "en": "This application performs real-time face recognition using webcam input, based on user-uploaded ID photos. Recognized faces are marked with a green box and label, while unrecognized ones are shown with a red box and 'Unknown' tag. The app offers an intuitive Streamlit-based interface for uploading photos and starting the live camera stream with automatic face matching."
+      },
+      "features": [
+        "Gerçek zamanlı yüz tanıma",
+        "Webcam entegrasyonu",
+        "Streamlit arayüzü",
+        "Yüz tespiti"
+      ],
+      "github": "https://github.com/fatmabetularslan/face_recognation"
+    },
+    {
+      "name": "Safe Area Detection",
+      "technology": "Python, OpenCV, NumPy",
+      "description": {
+        "tr": "Kamera görüntüsü üzerinde kullanıcı tarafından çizilen alanı güvenli bölge olarak tanımlayan bir prototip geliştirdim. Gerçek zamanlı izleme yapıyor ve bu alana nesne girdiğinde 'DANGEROUS' uyarısı veriyor.",
+        "en": "Defines a user-drawn region in the camera frame as a safe area, monitors it in real time, and raises a 'DANGEROUS' alert when an object enters the zone – a prototype for security and automation systems."
+      },
+      "features": [
+        "Gerçek zamanlı izleme",
+        "Alan tespiti",
+        "Güvenlik uyarıları",
+        "Bilgisayarlı görü"
+      ],
+      "github": "https://github.com/fatmabetularslan/safe_area"
+    },
+    {
+      "name": "Market Prices Automation",
+      "technology": "Python, SQL, Apache Airflow",
+      "description": {
+        "tr": "Meyve/sebze hal fiyatlarını otomatik olarak toplayan, SQL veritabanına yazan ve düzenli raporlayan bir iş akışı tasarladım.",
+        "en": "Automated fruit/vegetable market price tracking and reporting."
+      },
+      "features": [
+        "Otomatik fiyat takibi",
+        "Veri toplama ve saklama",
+        "Fiyat izleme",
+        "Raporlama sistemi"
+      ],
+      "github": "https://github.com/fatmabetularslan/Market-Prices-Automation"
+    },
+    {
+      "name": "Simple E-Commerce System with Python",
+      "technology": "Python · SQL Server · pyodbc",
+      "description": {
+        "tr": "Python ve SQL Server kullanarak konsol tabanlı basit bir e-ticaret sistemi geliştirdim. Müşteri/ürün yönetimi, sepete ekleme, ödeme alma ve sipariş takibi özelliklerini destekliyor.",
+        "en": "A console-based e-commerce system built with Python and SQL Server. The application supports core functionalities such as customer and product management, adding items to cart, processing payments, and tracking orders. It connects to a SQL Server database using the pyodbc library, offering a modular and extendable backend logic for basic retail operations."
+      },
+      "features": [
+        "Müşteri yönetimi",
+        "Ürün kataloğu",
+        "Sepet ve ödeme akışı",
+        "Sipariş takibi"
+      ],
+      "github": "https://github.com/fatmabetularslan/e-ticaret-sistem"
+    }
+  ],
+  "awards": [
+    {
+      "name": "BTK Datathon 2024",
+      "organization": "BTK",
+      "description": "364 takım arasından kamu/özel aşamasında 2./3. sıraya yerleşen ekipte yer aldım."
+    },
+    {
+      "name": "Gdz Electric Datathon 2024",
+      "organization": "Gdz Elektrik",
+      "description": "Elektrik kesintisi tahmin modeliyle ilk %7'lik dilimde yer aldım."
+    }
+  ],
+  "certifications": [
+    "Machine Learning Specialization - Stanford Online",
+    "Machine Learning Summer Camp - MIUUL",
+    "Big Data Camp - Türk Telekom"
+  ],
+  "languages": {
+    "Türkçe": "Ana dil",
+    "İngilizce": "Upper-intermediate"
+  },
+  "volunteering": [
+    "TEGV - Gönüllü",
+    "LÖSEV - Gönüllü"
+  ],
+  "medium_articles": [
+    {
+      "title": "Netflix, Spotify ve Amazon'un Sırrı: Öneri Sistemleri nasıl çalışıyor?",
+      "platform": "Medium",
+      "url": "https://medium.com/@betularsln01/netflix-spotify-ve-amazonun-s%C4%B1rr%C4%B1-%C3%B6neri-sistemleri-nas%C4%B1l-%C3%A7al%C4%B1%C5%9F%C4%B1yor-e03547f3c7ac",
+      "summary_tr": "Öneri sistemlerinin temel yapı taşları olan content-based, collaborative ve hibrit yaklaşımları; bunların Retrieval & Ranking süreçleriyle ilişkisini ve pratik kullanım örneklerini anlattım.",
+      "summary_en": "Explains how content-based, collaborative and hybrid recommenders power modern platforms, detailing the Retrieval & Ranking pipeline with intuitive math and real-life use cases."
+    },
+    {
+      "title": "Hal Fiyatlarını Takip Etmek: Airflow, Docker ve Power BI ile Otomasyon",
+      "platform": "Medium",
+      "url": "https://medium.com/@betularsln01/hal-fiyatlar%C4%B1n%C4%B1-takip-etmek-airflow-docker-ve-power-bi-ile-otomasyon-e6f7b73db0fe",
+      "summary_tr": "Adana, Kocaeli, İzmir ve Mersin hal fiyatlarını BeautifulSoup ile scrape edip PostgreSQL'de sakladım; Airflow + Docker ile iş akışını otomatikleştirip Power BI dashboard'ı üzerinden trendleri görselleştirdim.",
+      "summary_en": "Shows how I built an automated pipeline that scrapes multiple municipalities' wholesale prices, stores them in PostgreSQL, orchestrates jobs via Airflow/Docker, and visualizes trends in Power BI."
+    },
+    {
+      "title": "Docker: Modern Uygulama Geliştirmenin ve Dağıtımın Temel Rehberi",
+      "platform": "Medium",
+      "url": "https://medium.com/@betularsln01/docker-modern-uygulama-geli%C5%9Ftirmenin-ve-da%C4%9F%C4%B1t%C4%B1m%C4%B1n-temel-rehberi-fc35b7040446",
+      "summary_tr": "Docker konteyner kavramını, Flask örneğiyle image oluşturmayı, Docker Compose ile PostgreSQL entegrasyonunu, VM'lerle farklarını, ağ modellerini ve volume stratejilerini adım adım anlattım.",
+      "summary_en": "Covers what containers are, how to containerize a Flask app, orchestrate multi-service stacks with Compose, key differences vs VMs, advanced networking setups, and persistent volume options."
+    },
+    {
+      "title": "TF-IDF ile Metin Analizine Giriş",
+      "platform": "Medium",
+      "url": "https://medium.com/@betularsln01/tf-idf-ile-metin-analizine-giri%C5%9F-d1c4d2480713",
+      "summary_tr": "TF ve IDF kavramlarını, örnek belgeler ve Python scikit-learn koduyla anlattım; TF-IDF'nin arama motorları, e-ticaret anahtar kelimeleri ve akademik makale keşfinde nasıl kullanıldığını paylaştım.",
+      "summary_en": "Walks through TF-IDF math, sample document calculations, a scikit-learn implementation, and real-world use cases such as search ranking, e-commerce keyword extraction, and research discovery."
+    },
+    {
+      "title": "Veri Bilimi İstatistik 1: A/B Testi ve Varyans Analizi (ANOVA)",
+      "platform": "Medium",
+      "url": "https://medium.com/@betularsln01/veri-bilimi-i%CC%87statistik-1-a-b-testi-ve-varyans-analizi-anova-b911dcd8681d",
+      "summary_tr": "A/B testinin hipotez kurma, t-istatistiği ve Python örnekleriyle hesaplanışını; ANOVA türlerini, F-istatistiği matematiğini ve gerçek hayattaki kullanım senaryolarını anlattım.",
+      "summary_en": "Introduces the stats series by detailing A/B tests (hypotheses, t-stat) and ANOVA (one/two-way, repeated measures) with equations, numerical examples, and scipy implementations."
+    }
+  ],
+  "references": [
+    {
+      "name": "Furkan Alaybeg",
+      "title": "Mentor, Veri Mühendisi",
+      "organization": "Vodafone",
+      "phone": "+90 531 400 1476"
+    }
+  ]
+}
+
