@@ -73,4 +73,4 @@ uvicorn api_server:app --host 0.0.0.0 --port 10000
 
 Backend ayrıysa Vercel’de Environment’a şunu ekle:
 
-- `VITE_API_BASE_URL = https://<render-url>`
+- `VITE_API_URL = https://<render-url>`

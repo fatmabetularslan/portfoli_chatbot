@@ -156,6 +156,9 @@ app.add_middleware(
         "http://localhost:5173",
         "http://127.0.0.1:5173",
     ],
+    # Bazı hosting/proxy senaryolarında allow_origins liste kontrolü beklenmedik şekilde
+    # bypass edilebiliyor; regex ile de izin vererek CORS header'ının her zaman set edilmesini garantileriz.
+    allow_origin_regex=r"^(https://portfoli-chatbot\.vercel\.app|http://localhost:5173|http://127\.0\.0\.1:5173)$",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

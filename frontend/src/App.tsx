@@ -25,7 +25,7 @@ type CvJson = {
   references?: Array<{ name?: string; title?: string; organization?: string }>
 }
 
-const API = (import.meta as any).env?.VITE_API_URL ? String((import.meta as any).env.VITE_API_URL) : ''
+const API = import.meta.env.VITE_API_URL || ''
 
 function getStored<T>(key: string, fallback: T): T {
   try {
