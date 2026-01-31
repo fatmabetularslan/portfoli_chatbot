@@ -151,15 +151,17 @@ app = FastAPI(title="Portfolio AI Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
+    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_origins=[
+        "https://portfoli-chatbot.vercel.app",
         "http://localhost:5173",
         "http://127.0.0.1:5173",
-        "https://portfoli-chatbot.vercel.app",
     ],
-    allow_origin_regex=r"https://.*\.vercel\.app",
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
+    expose_headers=["*"],
+    max_age=86400,
 )
 
 # Statik dosyalar: URL'ler Streamlit ile aynı kalsın
