@@ -11,7 +11,7 @@ from tools.gemini_tool import generate_cover_letter
 from pathlib import Path
 import base64
 
-PDF_PATH = Path("assets/Fatma-Betül-ARSLAN-cv.pdf")
+PDF_PATH = Path("assets/Fatma-Betul-ARSLAN-CV-.pdf")
 
 # --- CSS: Beyaz büyük butonlar için ---
 st.markdown("""

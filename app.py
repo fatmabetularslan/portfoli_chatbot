@@ -10,7 +10,7 @@ import modern_chatbot
 
 st.set_page_config(page_title="Fatma Betül Arslan", page_icon="🤖", layout="centered")
 
-PDF_PATH = "assets/Fatma-Betül-ARSLAN-cv.pdf"
+PDF_PATH = "assets/Fatma-Betul-ARSLAN-CV-.pdf"
 PROFILE_IMG_PATH = Path("assets/vesika.jpg")
 
 

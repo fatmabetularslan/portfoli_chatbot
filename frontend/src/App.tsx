@@ -339,7 +339,7 @@ export default function App() {
           )}
           <h1 className="hero-name">{name}</h1>
           <h2 className="hero-title">{title}</h2>
-          <a href="/assets/Fatma-Betül-ARSLAN-cv.pdf" download="Fatma_Betul_Arslan_CV.pdf" className="download-cv-btn">
+          <a href="/Fatma-Betul-ARSLAN-CV.pdf" download className="download-cv-btn">
             📥 Download CV
           </a>
           <div className="social-links">
