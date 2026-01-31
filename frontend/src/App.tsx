@@ -25,6 +25,8 @@ type CvJson = {
   references?: Array<{ name?: string; title?: string; organization?: string }>
 }
 
+const API_BASE = (import.meta as any).env?.VITE_API_BASE_URL ? String((import.meta as any).env.VITE_API_BASE_URL) : ''
+
 function getStored<T>(key: string, fallback: T): T {
   try {
     const v = localStorage.getItem(key)
@@ -77,7 +79,7 @@ export default function App() {
   useEffect(() => {
     ;(async () => {
       try {
-        const r = await fetch('/api/cv')
+        const r = await fetch(`${API_BASE}/api/cv`)
         if (!r.ok) throw new Error('api cv failed')
         const data = (await r.json()) as CvJson
         setCv(data)
@@ -171,7 +173,7 @@ export default function App() {
     setChatMessages(next)
     setChatLoading(true)
     try {
-      const resp = await fetch('/api/chat', {
+      const resp = await fetch(`${API_BASE}/api/chat`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ message: msg, history: next, lang }),

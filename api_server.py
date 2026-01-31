@@ -151,7 +151,12 @@ app = FastAPI(title="Portfolio AI Chatbot API")
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:5173", "http://127.0.0.1:5173"],
+    # Lokal dev + Vercel prod (frontend)
+    allow_origins=[
+        "http://localhost:5173",
+        "http://127.0.0.1:5173",
+        "https://portfoli-chatbot.vercel.app",
+    ],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -243,5 +248,7 @@ def chat(req: ChatRequest):
 if __name__ == "__main__":
     import uvicorn
 
-    uvicorn.run("api_server:app", host="0.0.0.0", port=8000, reload=True)
+    # Render/Railway gibi ortamlarda PORT env kullanılır.
+    port = int(os.getenv("PORT", "8000"))
+    uvicorn.run("api_server:app", host="0.0.0.0", port=port, reload=True)
 
