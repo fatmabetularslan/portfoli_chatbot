@@ -27,6 +27,37 @@ type CvJson = {
 
 const API = import.meta.env.VITE_API_URL || ''
 
+async function sleep(ms: number) {
+  await new Promise((r) => setTimeout(r, ms))
+}
+
+async function fetchWithTimeout(input: RequestInfo | URL, init: RequestInit = {}, timeoutMs = 25000) {
+  const controller = new AbortController()
+  const id = window.setTimeout(() => controller.abort(), timeoutMs)
+  try {
+    return await fetch(input, { ...init, signal: controller.signal })
+  } finally {
+    window.clearTimeout(id)
+  }
+}
+
+async function fetchWithRetry(input: RequestInfo | URL, init: RequestInit = {}, retries = 2, timeoutMs = 25000) {
+  let lastErr: unknown
+  for (let i = 0; i <= retries; i++) {
+    try {
+      const res = await fetchWithTimeout(input, init, timeoutMs)
+      if (!res.ok) throw new Error(`HTTP ${res.status}`)
+      return res
+    } catch (e) {
+      lastErr = e
+      if (i < retries) {
+        await sleep(800 * Math.pow(2, i)) // 0.8s, 1.6s...
+      }
+    }
+  }
+  throw lastErr
+}
+
 function getStored<T>(key: string, fallback: T): T {
   try {
     const v = localStorage.getItem(key)
@@ -79,8 +110,7 @@ export default function App() {
   useEffect(() => {
     ;(async () => {
       try {
-        const r = await fetch(`${API}/api/cv`)
-        if (!r.ok) throw new Error('api cv failed')
+        const r = await fetchWithRetry(`${API}/api/cv`, {}, 2, 30000)
         const data = (await r.json()) as CvJson
         setCv(data)
         return
@@ -173,11 +203,16 @@ export default function App() {
     setChatMessages(next)
     setChatLoading(true)
     try {
-      const resp = await fetch(`${API}/api/chat`, {
-        method: 'POST',
-        headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify({ message: msg, history: next, lang }),
-      })
+      const resp = await fetchWithRetry(
+        `${API}/api/chat`,
+        {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ message: msg, history: next, lang: 'tr' }),
+        },
+        2,
+        30000,
+      )
       const data = await resp.json()
       setChatMessages((prev) => [...prev, { role: 'assistant', content: data?.reply ?? '' }])
     } catch {
@@ -185,7 +220,10 @@ export default function App() {
         ...prev,
         {
           role: 'assistant',
-          content: lang === 'tr' ? '⚠️ Yanıt alınamadı. Sunucu çalışıyor mu?' : '⚠️ Could not get a response. Is the server running?',
+          content:
+            lang === 'tr'
+              ? '⚠️ Yanıt alınamadı. Sunucu uyanıyor olabilir (cold start). 10–30 sn sonra tekrar deneyin.'
+              : '⚠️ Could not get a response. The server may be waking up (cold start). Try again in 10–30s.',
         },
       ])
     } finally {
